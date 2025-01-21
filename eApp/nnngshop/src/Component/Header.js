@@ -24,7 +24,7 @@ const Header=()=>{
                     <img src={people} alt="" />
                     <button className='mx-1'>Login</button>
                     {ishover ? <img src={downarrow} alt="^"/> : " ^"}
-                </div>
+                </div> 
                 <div className="flex items-center mx-5">
                     <img src={cart} alt="cart" />
                     <button className="mx-2">Cart</button>
