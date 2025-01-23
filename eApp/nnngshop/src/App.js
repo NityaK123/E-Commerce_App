@@ -6,8 +6,8 @@ import MainContent from './Component/MainContent';
 function App() {
   return (
     <div className="App">
-       <Header/>
-       <MainContent/>
+      <Header/>
+      <MainContent/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import downarrow from '../Images/downarrow.png'
 import cart from '../Images/cart.png'
 import seller from '../Images/seller.png'
 
-const Header=()=>{
+const Header=()=>{ 
 
     const [ishover,setIshover] = useState(false)
 
@@ -27,9 +27,9 @@ const Header=()=>{
                 </div> 
                 <div className="flex items-center mx-5">
                     <img src={cart} alt="cart" />
-                    <button className="mx-2">Cart</button>
-                </div>
-                <div className="flex items-center mx-5">
+                    <button className="mx-2" type="button">Cart</button>
+                </div> 
+                <div  className="flex items-center mx-5">
                     <img src={seller} alt="seller" />
                     <button className="mx-2">Become a seller</button>
                 </div>
@@ -39,4 +39,3 @@ const Header=()=>{
 }
 
 export default Header
-

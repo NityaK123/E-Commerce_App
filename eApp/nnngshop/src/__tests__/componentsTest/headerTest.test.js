@@ -3,14 +3,27 @@ import Header from '../../Component/Header'
 
 
 describe("Header Component Test",()=>{
-    render(<Header />);
+    
+    beforeEach(()=>{
+        render(<Header />)
+    })
 
     test("Test case first for Login Button",()=>{
         expect(screen.getByText(/Login/i)).toBeInTheDocument()
-    })
+    });
+
+    test("Test case first for Login Button",()=>{
+        expect(screen.getByText(/Cart/i)).toBeInTheDocument()
+        expect(screen.getByText(/Login/i)).toBeInTheDocument()
+    }) 
 
     test("Test case second for cart",()=>{
-          expect(screen.getByText(/Become a seller/i)).toBeInTheDocument()
-    })
+          const btn = screen.getByAltText('cart')
+          console.log(btn) 
+          expect(btn).toBeInTheDocument() 
+    }) 
+    
 })
+
+
 
